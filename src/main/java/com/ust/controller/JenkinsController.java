@@ -8,11 +8,16 @@ public class JenkinsController {
 
 	@GetMapping("/")
 	public String getHomePage() {
-		return "Welcome Jenkins Home Page";
+		return "<h1>Welcome Jenkins Home Page</h1>";
 	}
 	
-	@GetMapping("/home")
+	@GetMapping("/admin")
 	public String getAdminPage() {
-		return "Welcome Jenkins Admin Page";
+		return "<h1>Welcome Jenkins Admin Page</h1>";
+	}
+
+        @GetMapping("/user")
+	public String getAdminPage() {
+		return "<h1>Welcome Jenkins User Page</h1>";
 	}
 }
