@@ -17,7 +17,7 @@ public class JenkinsController {
 	}
 
         @GetMapping("/user")
-	public String getAdminPage() {
+	public String getUserPage() {
 		return "<h1>Welcome Jenkins User Page</h1>";
 	}
 }
